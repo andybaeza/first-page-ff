@@ -1,0 +1,209 @@
+@font-face {
+    font-family: "Bodoni";
+    src: url(fonts/BodoniModa-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: "Auromiya";
+    src: url(fonts/Auromiya.ttf);
+}
+
+@font-face {
+    font-family: "Coolvetica";
+    src: url(fonts/coolvetica\ rg.otf);
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Relationship";
+    src: url(fonts/Relationship\ of\ mélodrame.ttf);
+}
+
+@font-face {
+    font-family: "Recoleta";
+    src: url(fonts/Recoleta-RegularDEMO.otf);
+}
+
+* {
+    background-color: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Recoleta";
+}
+
+nav p {
+    margin: 0px;
+    padding-right: 10px;
+}
+
+.carousel-caption {
+    font-family: "Auromiya";
+}
+
+#myCarousel {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 10vh;
+    position: absolute;
+}
+
+.carousel-indicators {
+    visibility: hidden;
+}
+
+/* Ajustes del CD */
+.referencia-album {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper-album > .container {
+    width: 300px;
+    perspective: 1500px;
+}
+
+.album {
+    transition: all .5s ease;
+    transform: rotateX(50deg) scale(0.8);
+    box-shadow: 0 20px 50px #000;
+}
+
+.album::after {
+    content: '';
+    display: block;
+    background-color: #000;
+    padding-bottom: 100%;
+}
+
+.debut::after {
+    background-image: url('assets/debut.webp');
+    background-size: contain;
+}
+
+.helplessness-blues::after {
+    background-image: url('assets/helplessnessBlues.jpg');
+    background-size: contain;
+}
+
+.crack-up::after {
+    background-image: url('assets/crackUp.jpg');
+    background-size: contain;
+}
+
+.shore::after {
+    background-image: url('assets/shore.png');
+    background-size: contain;
+}
+
+.album:hover {
+    transition: all 0.7s ease;
+    transform: rotate(0deg) scale(1) translateY(10px);
+}
+
+.cd-album {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+}
+
+.album:hover .cd-album {
+    transition: 0.6s ease-in-out 0.3s;
+    left: 55%;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.wrapper-album a {
+    cursor: pointer;
+}
+
+.carousel-item > .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 180px 80px 80px;
+}
+
+.ajustar-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    padding-right: 30px;
+}
+
+.ajustar-texto h1 {
+    font-family: "Relationship";
+    font-size: 120px;
+    line-height: 80px;
+    padding-bottom: 40px;
+    position: static;
+}
+
+.helplessness-blues-texto h1 {
+    height: 100%;
+    width: auto;
+    font-size: 80px;
+    line-height: 80px;
+    padding-bottom: 20px;
+}
+
+.ajustar-texto p {
+    font-size: 19px;
+    line-height: 25px;
+    font-family: "Poppins";
+}
+
+.ajustar-texto i {
+    font-family: "Bodoni";
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50px);
+    position: static;
+}
+
+footer p {
+    font-style: italic;
+    font-size: 12px;
+    color: #ffffff34;
+}
