@@ -3,7 +3,7 @@
 Welcome to **FFabout**: an immersive fan-page dedicated to the band Fleet Foxes.  
 Here you’ll explore their history, music, visuals and influence — all wrapped in a clean, responsive web experience.
 
-This project is a practice of the habilities obtained from the Front-End Development Bootcamp 2024 by Technolochicas PRO.
+This project is a practice of the skills obtained from the Front-End Development Bootcamp 2024 by Technolochicas PRO.
 
 ---
 
